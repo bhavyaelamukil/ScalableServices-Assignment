@@ -1,0 +1,25 @@
+version: '2'
+services:
+  dispatch-service:
+    container_name: dispatch-service
+    build:
+      context: DispatchApplication
+      dockerfile: Dockerfile
+    image: dispatch-service:latest
+    ports:
+      - 8082:8082
+    networks:
+      - spring-cloud-network
+  registrtion-service:
+    container_name: registrtion-service
+    build:
+      context: Registration
+      dockerfile: Dockerfile
+    image: registrtion-service:latest
+    ports:
+      - 8081:8081
+    networks:
+      - spring-cloud-network
+networks:
+  spring-cloud-network:
+    driver: bridge

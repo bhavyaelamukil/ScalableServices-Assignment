@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: email-service
+
+server:
+    port: 9003
+
+kafka:
+    bootstrap-servers: kafka-service:9092
+    inboundTopic: "dispatch"
+    outboundTopic: "dispatch"

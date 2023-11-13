@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: register-service
+spec:
+  selector:
+    matchLabels:
+      app: register-service
+  template:
+    metadata:
+      labels:
+        app: register-service
+    spec:
+      containers:
+      - name: register-service
+        image: kube/register-service:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 9001
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: register-service-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: register-service
+  ports:
+  - protocol: TCP
+    port: 9001
+    targetPort: 9001

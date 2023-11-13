@@ -1,0 +1,72 @@
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-arm64
+sudo install minikube-darwin-arm64 /usr/local/bin/minikube
+minikube start
+kubectl create -f ./resources/demo-namespace.yml
+kubectl get namespaces
+kubectl config set-context $(kubectl config current-context) --namespace=demo
+kubectl create -f ./resources/zookeeper.yml
+kubectl create -f ./resources/kafka.yml
+kubectl get all
+kubectl exec -it kafka-deployment-7fc8fcc44f-4kwxh -- /bin/bash
+kafka-topics --bootstrap-server localhost:9092 --create --topic dispatch --replication-factor 1 --partitions 3
+
+cd register-service
+mvn clean install
+eval $(minikube -p minikube docker-env)
+docker build -t kube/register-service:latest .
+kubectl create -f ./src/main/resources/register-service.yml
+minikube service register-service-service --namespace demo --url
+
+minikube addons enable ingress
+kubectl get pods -n ingress-nginx
+kubectl apply -f ./resources/demo-ingress.yml
+kubectl get ingress
+minikube tunnel
+
+cd dispatch-service
+mvn clean install
+eval $(minikube -p minikube docker-env)
+docker build -t kube/dispatch-service:latest .
+kubectl create -f ./src/main/resources/dispatch-service.yml
+minikube service dispatch-service-service --namespace demo --url
+
+minikube addons enable ingress
+kubectl get pods -n ingress-nginx
+kubectl apply -f ./resources/demo-ingress.yml
+kubectl get ingress
+minikube tunnel
+
+cd email-service
+mvn clean install
+eval $(minikube -p minikube docker-env)
+docker build -t kube/email-service:latest .
+kubectl create -f ./src/main/resources/email-service.yml
+minikube service email-service-service --namespace demo --url
+
+minikube addons enable ingress
+kubectl get pods -n ingress-nginx
+kubectl apply -f ./resources/demo-ingress.yml
+kubectl get ingress
+minikube tunnel
+
+kubectl get all
+minikube dashboard
+
+{
+"email" : "2022mt93171@wilp.bits-pilani.ac.in",
+"name" : "Bhavya",
+"ageCategory" : "18years",
+"address" : "Chennai",
+"phone" : "23456789"
+}
+
+
+kubectl delete ingress demo-ingress
+kubectl delete -f ./register-service/src/main/resources/register-service.yml
+kubectl delete -f ./dispatch-service/src/main/resources/dispatch-service.yml
+kubectl delete -f ./email-service/src/main/resources/email-service.yml
+kubectl delete -f ./resources/zookeeper.yml
+kubectl delete -f ./resources/kafka.yml
+kubectl get all
+kubectl delete namespace demo
+minikube stop

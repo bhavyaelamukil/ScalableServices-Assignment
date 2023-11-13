@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1efc00f9-b857-48ba-b98e-08ca3318fdcd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/commands.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/src/main/java/com/assignment/DispatchApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/src/main/java/com/assignment/KafkaConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/src/main/java/com/assignment/consumer/MessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/src/main/java/com/assignment/controller/DispatchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/src/main/java/com/assignment/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/src/main/java/com/assignment/dto/DispatchDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/src/main/java/com/assignment/event/DemoInboundEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/src/main/java/com/assignment/properties/KafkaDemoProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/src/main/java/com/assignment/repo/DispatchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatch-service/src/main/resources/dispatch-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/com/assignment/EmailApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/com/assignment/KafkaConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/com/assignment/consumer/MessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/com/assignment/controller/EmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/com/assignment/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/com/assignment/dto/DispatchDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/com/assignment/event/DemoInboundEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/com/assignment/properties/KafkaDemoProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/com/assignment/services/EmailSenderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/resources/email-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/RegistrationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/controller/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/dto/DispatchDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/dto/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/dto/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/event/DemoInboundEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/producer/MessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/services/RegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/services/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-service/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register-service/src/main/resources/register-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/register-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/demo-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo-application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/demo-ingress.yml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo-ingress.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/kafka/KafkaDemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/kafka/KafkaDemoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/KafkaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/kafka/consumer/KafkaDemoConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/consumer/MessageConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/kafka/controller/DemoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/kafka/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/kafka/event/DemoInboundEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-service/src/main/java/com/assignment/dto/EmailDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/kafka/event/DemoOutboundEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/dto/EmailDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/kafka/producer/KafkaProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/kafka/properties/KafkaDemoProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/properties/KafkaDemoProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/kafka/rest/api/TriggerEventsRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/register-service/src/main/java/com/assignment/api/TriggerEventsRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/kafka/service/DemoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/register-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatch-service/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/kafka/consumer/KafkaDemoConsumerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/kafka/controller/DemoControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/kafka/controller/IndexControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/kafka/integration/EndToEndIntegrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/kafka/producer/KafkaProducerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/kafka/service/DemoServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/kafka/util/TestData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/register-service/src/test/resources/application-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logback-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/register-service/src/test/resources/logback-test.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2XiLOIfVRY8ARKD2PJHkxeETyWi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bhavya.ashok/Documents/kafka-kubernetes-demo/email-service&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/email-service" />
+      <recent name="$PROJECT_DIR$/dispatch-service" />
+      <recent name="$PROJECT_DIR$/email-service/src/main/java/com/assignment" />
+      <recent name="$PROJECT_DIR$/dispatch-service/src/main/java/com/assignment" />
+      <recent name="$PROJECT_DIR$/email-service/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/register-service/src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.assignment.event" />
+      <recent name="com.assignment.dto" />
+      <recent name="com.assignment.services" />
+      <recent name="com.assignment.controller" />
+      <recent name="com.assignment.repo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in register-service">
+    <configuration name="KafkaDemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.kafka.KafkaDemoApplication" />
+      <module name="kafka-kubernetes-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo.kafka.KafkaDemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.kafka.KafkaDemoApplication" />
+      <module name="register-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in register-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="register-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in register-service" />
+        <item itemvalue="Application.demo.kafka.KafkaDemoApplication" />
+        <item itemvalue="Application.KafkaDemoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1efc00f9-b857-48ba-b98e-08ca3318fdcd" name="Changes" comment="" />
+      <created>1699106920322</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699106920322</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

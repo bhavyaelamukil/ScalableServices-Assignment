@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: dispatch-service
+
+server:
+    port: 9002
+
+kafka:
+    bootstrap-servers: kafka-service:9092
+    inboundTopic: "dispatch"
+    outboundTopic: "dispatch"

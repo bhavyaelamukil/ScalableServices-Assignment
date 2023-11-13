@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dispatch-service
+spec:
+  selector:
+    matchLabels:
+      app: dispatch-service
+  template:
+    metadata:
+      labels:
+        app: dispatch-service
+    spec:
+      containers:
+      - name: dispatch-service
+        image: kube/dispatch-service:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 9002
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dispatch-service-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: dispatch-service
+  ports:
+  - protocol: TCP
+    port: 9002
+    targetPort: 9002

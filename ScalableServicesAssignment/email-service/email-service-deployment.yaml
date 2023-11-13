@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: email-service-deployment
+  name: email-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: email-service-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: email-service-deployment
+    spec:
+      containers:
+      - image: bhavyaelamukil/email-service
+        name: email-service
+        resources: {}
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: email-service-deployment
+  name: email-service-deployment
+spec:
+  ports:
+  - name: 8080-8080
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: email-service-deployment
+  type: ClusterIP
+status:
+  loadBalancer: {}
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: email-service-deployment
+  name: email-service-deployment
+spec:
+  ports:
+  - name: 8083-8083
+    port: 8083
+    protocol: TCP
+    targetPort: 8083
+  selector:
+    app: email-service-deployment
+  type: ClusterIP
+status:
+  loadBalancer: {}

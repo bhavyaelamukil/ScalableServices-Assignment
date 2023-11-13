@@ -1,0 +1,7 @@
+
+docker -compose
+
+1) docker-compose config
+2) docker-compose up --build
+3) docker exec Kafka kafka-topics --bootstrap-server kafka:9092 --create --topic mytopic
+4) docker exec broker kafka-topics --bootstrap-server kafka:9092 —list
